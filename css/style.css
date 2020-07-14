@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url("../images/background.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/*-------------------Header-----------------------*/
+
+.header__box {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+}
+
+.menu__elements {
+    padding: 0 20px;
+}
+
+.menu__links {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+
+/*-------------------Main-----------------------*/
+
+
+.main {
+    height: calc(100vh - 80px);
+}
+
+.main__box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.into__info {
+    width: 50%;
+}
+
+.into__text {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.into__title {
+    color: var(--main-color);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.into__details {
+    margin-top: 60px;
+    display: flex;
+}
+
+.el__text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.icon__items-one::before {
+    content: "\f0c2";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+.icon__items-two::before {
+    content: "\f3d1";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+.icon__items-three::before {
+    content: "\f2f2";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+.details__el1 {
+    margin-right: 20px;
+    width: 33%
+}
+
+.details__el2 {
+    margin: 0 20px;
+    width: 33%
+}
+
+.details__el3 {
+    margin-left: 20px;
+    width: 33%
+}
+
+
+/*-------------------Form-----------------------*/
+
+.intro__form {
+    background: white;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, .13);
+}
+
+.intro__box {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.form__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+label[for="name"],
+label[for="email"],
+label[for="expectations"] {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.primary__input {
+    margin-top: 30px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    padding-bottom: 8px;
+    padding-top: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 8px;
+    padding-top: 12px;
+}
+
+
+.btn {
+    display: inline-flex;
+    padding: 20px 30px;
+    background: var(--accent-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
